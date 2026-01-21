@@ -13,13 +13,13 @@ int isEmpty(){
     return (front==-1 || front>rear);
 }
 
-//checking is quque is full
+//checking is queue is full
 int isFull(){
     return (rear==MAX-1);
 }
 
 //adding elements in queue
-void enquque(int x){
+void enqueue(int x){
     if(isFull()){
         printf("Queue Overflow\n");
     }
@@ -33,8 +33,8 @@ void enquque(int x){
     }
 }
 
-//removing elements from quque
-void dequque(){
+//removing elements from queue
+void dequeue(){
     if(isEmpty()){
         printf("Queue Underflow\n");
     }
@@ -44,7 +44,7 @@ void dequque(){
     }
 }
 
-//displaying elements of quque(front element)
+//displaying elements of queue(front element)
 int getfront(){
     if(isEmpty()){
         printf("Queue is empty\n");
@@ -55,7 +55,7 @@ int getfront(){
     }
 }
 
-//displaying elements of quque(rear element)
+//displaying elements of queue(rear element)
 int getrear(){
     if(isEmpty()){
         printf("Queue is empty\n");
@@ -66,7 +66,7 @@ int getrear(){
     }
 }
 
-//displaying all elements of quque
+//displaying all elements of queue
 void display(){
     if(isEmpty()){
         printf("Queue is empty\n");
@@ -82,13 +82,13 @@ void display(){
 
 int main(){
     makeEmpty();
-    enquque(10);
-    enquque(20);
-    enquque(30);
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
     display();
     printf("Front element: %d\n",getfront());
     printf("Rear element: %d\n",getrear());
-    dequque();
+    dequeue();
     display();
     return 0;
 }
