@@ -43,7 +43,7 @@ class CircularQueueDemo {
     }
 
     public static void main(String[] args) {
-        // defult values
+        // default values
         enqueue(10);
         enqueue(20);
         enqueue(30);

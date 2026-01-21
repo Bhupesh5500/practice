@@ -40,7 +40,7 @@ class PriorityQueueDemo {
     }
 
     public static void main(String[] args) {
-        // defult values 
+        // default values 
         enqueue(30);
         enqueue(10);
         enqueue(50);
